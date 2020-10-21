@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.cardForma .time{
+  margin: 10px;
+}
+
 .title{
   color: blue;
 }
