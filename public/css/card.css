@@ -1,5 +1,7 @@
 .cardForma{
   border: solid 2px #DDD;
+  /*display: flex;
+  flex-direction: column;*/
   padding: 10px 10px;
 }
 
@@ -9,6 +11,11 @@
 
 .cardForma .time{
   margin: 10px;
+}
+
+.duree-note{
+  display: flex;
+  justify-content: space-between;
 }
 
 .title{
