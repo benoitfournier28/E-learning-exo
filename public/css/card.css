@@ -1,0 +1,12 @@
+.cardForma{
+  border: solid 2px #DDD;
+  padding: 10px 10px;
+}
+
+.cardForma img{
+  width: 100%;
+}
+
+.title{
+  color: blue;
+}
