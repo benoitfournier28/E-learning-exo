@@ -21,3 +21,8 @@
 .title{
   color: blue;
 }
+
+/* pour la liste de sformation à gauche */
+.lstright li{
+  margin-top: 10px;
+}
