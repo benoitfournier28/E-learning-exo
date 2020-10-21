@@ -1,5 +1,21 @@
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container{
+    max-width: 1380px !important;
+}
+
+.list{
+    display: block;
+}
+
+.list li{
+    margin:1%;
+}
+
+.list li a{
+    color: rgb(48, 47, 47);
+    font-weight: 600;
+}
+
+.list li a:hover{
+    color: rgb(0, 82, 190);
+    transition: all 0.6s;
 }
