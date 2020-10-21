@@ -13,7 +13,16 @@
 </head>
 <body>
     <%- include('header')%>
-    <%- include('navbar_formations')%>
-    <%- include('card')%>
+    <div class="container">
+        <div class="row">
+            <div class="col l3">
+                <%- include('listeFormation')%>
+            </div>
+            <div class="col l9">
+                <%- include('card')%>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
