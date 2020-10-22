@@ -13,18 +13,29 @@
     <title>Document</title>
 </head>
 <body>
-    <%- include('header')%>
-    <%- include('navbar_formations')%>
-    <div class="container">
-        <div class="row">
-            <div class="col l3">
-                <%- include('listeFormation')%>
-            </div>
-            <div class="col l9">
-                <%- include('card')%>
+    <header>
+        <%- include('header')%>
+    </header>
+
+    <main>
+        <%- include('navbar_formations')%>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col l3">
+                    <%- include('listeFormation')%>
+                </div>
+                <div class="col l9">
+                    <%- include('card')%>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
     
+    <footer>
+        <div class="l1">
+            <%- include('footer')%>
+        </div>
+    </footer>
 </body>
 </html>
