@@ -4,6 +4,7 @@
 
 .list{
     display: block;
+    margin-bottom: 10%;
 }
 
 .list li{
@@ -16,6 +17,15 @@
 }
 
 .list li a:hover{
+    color: rgb(0, 82, 190);
+    transition: all 0.6s;
+}
+
+.lstright li a{
+    color: rgb(48, 47, 47);
+}
+
+.lstright li a:hover{
     color: rgb(0, 82, 190);
     transition: all 0.6s;
 }
