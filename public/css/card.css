@@ -23,8 +23,86 @@
   color: blue;
 }
 
-/* pour la liste de sformation à gauche */
+/********************** pour la liste de sformation à gauche ****************/
 .lstright li{
   margin-top: 20px;
 
+}
+/************************ détail formation ***********************************/
+.headerForma div img{
+  width: 100%;
+  padding: 0px 20px 0 0;
+}
+.headerForma div{
+  margin: 20px 15px;
+}
+
+.headerForma .info {
+  border: solid 2px #000;
+  background-color: #000A;
+  color: #EEE;
+  padding: 10px;
+}
+.fa-clock{
+  font-size: 20px;
+}
+
+.time{
+  padding-right: 20px ;
+}
+
+.headerForma .info > *{
+  padding: 0 3px;
+}
+.infoCmd{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.infoCmd *{
+  padding: 15px 25px;
+}
+.infoCmd .prix{
+  font-size: 30px;
+}
+
+.infoCmd .JeCommande{
+  border: solid 2px #000;
+}
+
+/*********************************** NE FONCTIONE PAS *************************************/
+/*
+.infoCmd .JeCommande span{
+  margin-top: 10px;
+}
+
+.fa-arrow-right {
+  font-size: 1px;
+  color: beige;
+}
+*/
+/******************************* Détail de la formation ***************************/
+.video{
+  display: flex;
+  align-items: center;
+  border: solid 2px #222;
+  margin: 5px 0;
+  background-color: #DDD;
+
+  justify-content: space-between;
+}
+
+.video .nomVideo p{
+  margin: 0px 10px;
+}
+.video .nomVideo{
+  margin: 15px 10px;
+}
+.video p{
+  display: inline;
+}
+
+.video .duree{
+  padding: 0 20px;
 }

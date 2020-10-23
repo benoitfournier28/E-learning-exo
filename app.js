@@ -19,6 +19,10 @@ app.get('/catalogue', (req, res) => {
     res.render('catalogue');
 });
 
+app.get('/detail/:id', (req, res) => {
+    res.render('detail', { id: req.params.id});
+});
+
 app.get('/connect', (req, res) => {
     res.render('connect');
 });
