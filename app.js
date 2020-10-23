@@ -19,6 +19,10 @@ app.get('/catalogue', (req, res) => {
     res.render('catalogue');
 });
 
+app.get('/connect', (req, res) => {
+    res.render('connect');
+});
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
