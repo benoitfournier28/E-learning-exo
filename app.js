@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
     res.render('index');
     });
 
+app.get('/catalogue', (req, res) => {
+    res.render('catalogue');
+});
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });

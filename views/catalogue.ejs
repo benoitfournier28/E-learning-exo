@@ -19,9 +19,19 @@
     </header>
 
     <main>
-        <%- include('navbar_formations')%>
-        
+        <div class="container">
+            <div class="row">
+                <div class="col l3">
+                    <%- include('listeFormation')%>
+                </div>
+                <div class="col l9">
+                    <%- include('card')%>
+                </div>
+            </div>
+        </div>
     </main>
+
         <%- include('footer')%>
+        
 </body>
 </html>
