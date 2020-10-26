@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/card.css">
     <link rel="stylesheet" href="/css/navbar_formations.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/connect.css">
     <title>Elearning</title>
 </head>
 <body>
@@ -20,10 +21,28 @@
     </header>
 
     <main>
+        <div class="login-page">
+            <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="nom"/>
+                <input type="password" placeholder="mot de passe"/>
+                <input type="text" placeholder="adresse email"/>
+                <button>créer</button>
+                <p class="message">Déjà membre? <a href="#">Se connecter</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" placeholder="pseudonyme"/>
+                <input type="password" placeholder="mot de passe"/>
+                <button>se connecter</button>
+                <p class="message">Pas encore membre? <a href="#">Créer un compte</a></p>
+                </form>
+            </div>
+        </div>
 
     </main>
 
         <%- include('footer')%>
         
 </body>
+    <script src="../public/js/connect.js"></script>
 </html>
