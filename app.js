@@ -1,14 +1,28 @@
 var express = require("express");
+var axios = require("axios");
 const app = express();
 var bodyParser = require("body-parser");
 // var materialize = require("materialize-css");
 const port = 3000;
+
+const cardRoute = require("./back/Routes/card_routes");
+app.use(bodyParser.json());
 
 app.use(express.static("public"));
 // app.use(materialize)
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set("view engine", "ejs");
 
+app.use("/card", cardRoute);
+
+axios.get('http://localhost:3000/card/get')
+  .then(function (response) {
+    onSuccess(response)
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 
 // Chargement de la page index.html
 app.get('/', (req, res) => {
