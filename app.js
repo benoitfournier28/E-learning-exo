@@ -1,7 +1,6 @@
-var express = require("express");
-var axios = require("axios");
+const express = require("express");
 const app = express();
-var bodyParser = require("body-parser");
+const bodyParser = require("body-parser");
 // var materialize = require("materialize-css");
 const port = 3000;
 
@@ -15,14 +14,6 @@ app.set("view engine", "ejs");
 
 app.use("/card", cardRoute);
 
-axios.get('http://localhost:3000/card/get')
-  .then(function (response) {
-    onSuccess(response)
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
 
 // Chargement de la page index.html
 app.get('/', (req, res) => {
@@ -48,3 +39,4 @@ app.get('/register', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
+
