@@ -6,8 +6,15 @@ const port = 3000;
 
 app.use(express.static("public"));
 // app.use(materialize)
-app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.urlencoded({ extended: false }));
 app.set("view engine", "ejs");
+
+
+const cardRoute = require("./back/Routes/card_routes");
+
+app.use(bodyParser.json());
+
+app.use("/card", cardRoute);
 
 
 // Chargement de la page index.html
